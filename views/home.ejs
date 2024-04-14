@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Varshilkumar Parikh">
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/legoSets.js"></script>
+    <title>Lego Collection</title>
+</head>
+
+<body class="grid grid-rows-[auto,1fr,auto] min-h-screen">
+    <header>
+        <%- include('partials/navbar', {page: '/'}) %>
+    </header>
+
+    <main>    
+        <section class="hero bg-blue-500 text-white p-10 text-center">
+            <h1 class="text-4xl mb-4">Explore Our Lego Collection</h1>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+            <div class="card bg-white p-6 rounded-lg shadow-md">
+                <img src="/images/lego/003.png" alt="Lego Set 1" class="w-full h-64 object-cover mb-4 rounded"/>
+                <h2 class="text-2xl mb-2">Aeroplane</h2>
+                <p class="mb-4">Ready to take off ?</p>
+                <a href="https://rebrickable.com/sets/2532-1/aircraft-and-ground-crew/?inventory=1#comments" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+            </div>
+            <div class="card bg-white p-6 rounded-lg shadow-md">
+                <img src="/images/lego/002.png" class="w-full h-64 object-cover mb-4 rounded"/>
+                <h2 class="text-2xl mb-2">Jumbo Brick school </h2>
+                <p class="mb-4">Back to school.</p>
+                <a href="https://rebrickable.com/sets/060-3/jumbo-brick-school-set/?inventory=1#comments" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+            </div>
+            <div class="card bg-white p-6 rounded-lg shadow-md">
+                <img src="/images/lego/001.png" class="w-full h-64 object-cover mb-4 rounded"/>
+                <h2 class="text-2xl mb-2">Fire Fighters: The fire rescue</h2>
+                <p class="mb-4"> Fire fighters are here to save the world.</p>
+                <a href="https://rebrickable.com/sets/BOOK-2/city-meet-a-firefighter/?inventory=1#bi" class="btn bg-blue-500 text-white py-2 px-4 rounded">View Set</a>
+            </div>
+        </section>
+    </main>
+    <% include('partials/footer') %>
+</body>
+</html>
